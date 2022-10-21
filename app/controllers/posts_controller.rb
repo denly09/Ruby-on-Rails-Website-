@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
   end
+
   def new
     @post = Post.new
   end
@@ -13,9 +14,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to posts_path
     else
-=begin
       render :new, status: :unprocessable_entity
-=end
     end
   end
 
