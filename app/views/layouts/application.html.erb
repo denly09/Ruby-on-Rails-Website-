@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>L u n a &#x1D19; i e | Welcome </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <div  class="navbar">
+      <header>
+        <div class="container" >
+          <h1 class="logo"><i class="fa-solid fa-star-and-crescent" ></i>L u n a &#x1D19; i e </h1>
+          <ul>
+            <li><a href="https://www.google.com/" > Home&nbsp&nbsp </a></li>
+            <li><a href="#" target="_blank"> Contact&nbsp&nbsp  </a></li>
+            <li><a href="#" > About Us&nbsp&nbsp </a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+  <footer class="main-footer">
+    <p> Luna&#x1D19ie Spa & Hotel&nbsp 2022,&nbsp; All Rights Reserved</p>
+  </footer>
+
+</html>

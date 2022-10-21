@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+table, th, td {
+    border: 1px double;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+.navbar {
+    background-color: lightblue;
+    font-family: "Copperplate", Monaco, monospace;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.navbar .logo {
+    float: left;
+    display: inline;
+}
+.navbar ul li {
+    display: inline;
+    list-style: none;
+    float: left;
+}
+
+.container2 ul li {
+    border: groove;
+    display: inline;
+    list-style: none;
+    float: left;
+}
+.container1 {
+    background-color: whitesmoke;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+
+
+body {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.btn {
+    font-family: "Mocano", Lucida Console, monospace;
+    background: lightblue;
+    color: black;
+    font-size: 12px;
+    padding: 8px 10px ;
+    border-radius: 5px;
+}
+
+.main-footer {
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+    width: 100%;
+    overflow: auto;
+
+}
+

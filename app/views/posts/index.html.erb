@@ -1,0 +1,38 @@
+
+<h1> Post List</h1>
+
+<table>
+  <thead>
+  <td>First Name</td>
+  <td>Last Name</td>
+  <td>Email</td>
+  <td>Contact</td>
+  <td>Change</td>
+  </thead>
+  <% @posts.each do |post| %>
+  <tr>
+    <td><a class="f_name1"><%= post.first_name %></a>
+    <td><a class="l_name1"><%= post.last_name %></a>
+    <td><a class="email1"><%= post.email %></a>
+    <td><a class="c_number1"><%= post.contact_number%></a></td>
+    <td>
+    <%= link_to 'Show', post_path(post) %>
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= button_to 'Delete', post_path(post), method: :delete %>
+    </td>
+  </tr>
+
+
+
+  </td>
+  <% end %>
+
+  <%= link_to 'New', new_post_path %>
+
+</table>
+
+</html>
+
+
+
+

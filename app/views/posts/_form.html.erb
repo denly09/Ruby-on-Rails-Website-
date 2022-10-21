@@ -1,0 +1,26 @@
+<%= form_with model: post do |form| %>
+  <% if post.errors.any? %>
+    <ul>
+      <% post.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+    <div>
+      <%= form.label :first_name, class: 'f_name'%>
+      <%= form.text_field :first_name, placeholder: 'First Name' %>
+    </div>
+    <div>
+      <%= form.label :last_name, class: "l_name" %>
+      <%= form.text_field :last_name, placeholder: 'Last Name' %>
+    </div>
+    <div>
+      <%= form.label :email, class: 'email' %>
+      <%= form.text_field :email, placeholder: "Email"%>
+    </div>
+    <div>
+      <%= form.label :contact_number %>
+      <%= form.text_field :contact_number, placeholder: "Contact Number"%>
+    </div>
+      <%= form.submit %>
+<% end %>

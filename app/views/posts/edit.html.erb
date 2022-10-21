@@ -1,0 +1,27 @@
+
+
+  <h1>Edit Post id: <%= @post.id %></h1>
+
+  <%= form_with model: @post do |form| %>
+  <div>
+    <%= form.label :first_name, class: 'f_name' %>
+    <%= form.text_field :first_name %>
+  </div>
+  <div>
+    <%= form.label :last_name, class: "l_name" %>
+    <%= form.text_field :last_name %>
+  </div>
+  <div>
+    <%= form.label :email, class: 'email' %>
+    <%= form.text_field :email%>
+  </div>
+  <div>
+    <%= form.label :contact_number %>
+    <%= form.text_field :contact_number%>
+  </div>
+    <%= form.submit %>
+  <% end %>
+
+  <%= render partial: 'form', locals: { post: @post } %>
+
+  <%= link_to 'Index', posts_path %>
