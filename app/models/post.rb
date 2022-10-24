@@ -5,4 +5,5 @@ class Post < ApplicationRecord
   validates :contact_number, presence:true
 
   has_many :comments
+  belongs_to :user
 end
