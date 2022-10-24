@@ -3,4 +3,6 @@ class Post < ApplicationRecord
   validates :last_name, presence: true
   validates :email, presence:true
   validates :contact_number, presence:true
+
+  has_many :comments
 end
