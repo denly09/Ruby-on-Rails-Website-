@@ -37,6 +37,10 @@ input[type=text], select {
     float: left;
 }
 
+.navbar ul {
+    float: right;
+}
+
 .container2 ul li {
     border: groove;
     display: inline;
