@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -7,11 +8,11 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-
   end
 
   def create
     @post = Post.new(post_params)
+    # @post.user = current_user
     if @post.save
       redirect_to posts_path
     else
@@ -19,12 +20,11 @@ class PostsController < ApplicationController
     end
   end
 
-
   def show
 
   end
 
-  def edit
+  def edit;
 
   end
 
