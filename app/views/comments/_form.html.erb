@@ -8,20 +8,9 @@
   <% end %>
   <div>
     <div>
-      <%= form.label :first_name, class: 'f_name'%>
-      <%= form.text_field :first_name, placeholder: 'First Name' %>
+      <%= form.label :content %>
+      <%= form.text_field :content, placeholder: "Comment"%>
     </div>
-    <div>
-      <%= form.label :last_name, class: "l_name" %>
-      <%= form.text_field :last_name, placeholder: 'Last Name' %>
-    </div>
-    <div>
-      <%= form.label :email, class: 'email' %>
-      <%= form.text_field :email, placeholder: "Email"%>
-    </div>
-    <div>
-      <%= form.label :contact_number %>
-      <%= form.text_field :contact_number, placeholder: "Contact Number"%>
-    </div>
+  </div>
   <%= form.submit %>
 <% end %>
